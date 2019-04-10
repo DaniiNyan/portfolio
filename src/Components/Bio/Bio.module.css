@@ -1,0 +1,12 @@
+.Bio {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./bkgBio.jpg);
+    background-position: center; 
+}
+
+.Bio > img {
+    width:200px;
+}
