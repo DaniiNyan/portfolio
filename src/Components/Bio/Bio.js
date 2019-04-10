@@ -19,6 +19,7 @@ const bio = props => {
                 Sed pulvinar nulla ornare posuere pulvinar. Maecenas luctus est ac lacinia dapibus.
             </p>
             <Col md={3} className={BioStyle.centralizaImagem}>
+            
                 <Image 
                     src={foto} 
                     alt="Foto" 
