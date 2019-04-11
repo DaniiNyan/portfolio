@@ -3,13 +3,29 @@ import React from 'react';
 import Header from "./Components/Header/Header";
 import Navbar from "./Components/Navbar/Navbar";
 import Bio from "./Components/Bio/Bio";
-// import Timeline from "./Components/Timeline/Timeline";
+import Timeline from "./Components/Timeline/Timeline";
 // import Projects from "./Components/Projects/Projects";
 // import Contact from "./Components/Contact/Contact";
 // import Footer from "./Components/Footer/Footer";
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import './App.css';
 
+
 const app = () => {
+  const eventosTimeline = [
+    { titulo: "Teste", texto: "Lorem ipsum" }
+  ];
+
+  const anos = [
+    { icone: "", ano: 2000 }
+  ]
+
+  const renderTimeline = () => {
+    return (
+      <Timeline >
+      </Timeline>
+    )
+  }
 
 
 
@@ -18,10 +34,10 @@ const app = () => {
       <Header></Header>
       <Navbar></Navbar>
       <Bio></Bio>
-      {/* <Timeline></Timeline>
-      <Projects></Projects>
-      <Contact></Contact>
-      <Footer></Footer> */}
+      {renderTimeline()}
+      {/* <Projects></Projects> */}
+      {/* <Contact></Contact> */}
+      {/* <Footer></Footer> */}
     </div>
   )
 }
