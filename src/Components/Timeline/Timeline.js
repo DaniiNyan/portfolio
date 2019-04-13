@@ -5,27 +5,30 @@ import {
   VerticalTimelineElement
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import './style.css';
 
 const timeline = props => {
-  const { ano, icone, titulo, texto } = props;
+  const { ano, icon, titulo, texto } = props;
 
+  console.log(props)
   return (
-    <VerticalTimeline>
+    <VerticalTimeline className={TimelineStyle.verticalTimeline}>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date={ano}
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={icone}
+        icon={icon}
       >
         <h3 className="vertical-timeline-element-title">{titulo}</h3>
         <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
         <p>{texto}</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
+        style={{ marginLeft: '5%'}}
         className="vertical-timeline-element--work"
         date="2010 - 2011"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={icone}
+        icon={icon}
       >
         <h3 className="vertical-timeline-element-title">Art Director</h3>
         <h4 className="vertical-timeline-element-subtitle">

@@ -1,47 +1,56 @@
-import React from 'react';
+import React, { useState } from "react";
 //importar componentes aqui:
 import Header from "./Components/Header/Header";
 import Navbar from "./Components/Navbar/Navbar";
 import Bio from "./Components/Bio/Bio";
 import Timeline from "./Components/Timeline/Timeline";
+import WorkIcon from "@material-ui/icons/Work";
 // import Projects from "./Components/Projects/Projects";
 // import Contact from "./Components/Contact/Contact";
 // import Footer from "./Components/Footer/Footer";
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
-import './App.css';
-
+//import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import "./App.css";
 
 const app = () => {
-  const eventosTimeline = [
-    { titulo: "Teste", texto: "Lorem ipsum" }
-  ];
+  const [eventoState, setEventoState] = useState({
+    eventos: [
+      { id: 1, icone: <WorkIcon />, ano:"2010 - 2011", titulo: "Teste", texto: "Lorem ipsum" },
+      { id: 2, icone: <WorkIcon />, ano:"2011 - 2013", titulo: "Teste", texto: "Lorem ipsum" },
+      { id: 3, icone: <WorkIcon />, ano:"2013 - Present", titulo: "Teste", texto: "Lorem ipsum" }
+    ]
+  });
 
-  const anos = [
-    { icone: "", ano: 2000 }
-  ]
-
+  console.log(WorkIcon);
   const renderTimeline = () => {
     return (
-      <Timeline >
-      </Timeline>
-    )
-  }
-
-
+      <div className="geral">
+        {eventoState.eventos.map(evento => {
+          return (
+            <Timeline
+              key={evento.id}
+              ano={evento.ano}
+              icon={evento.icone}
+              titulo={evento.titulo}
+              texto={evento.texto}
+            />
+          );
+        })}
+      </div>
+    );
+  };
 
   return (
     <div>
-      <Header></Header>
-      <Navbar></Navbar>
-      <Bio></Bio>
+      <Header />
+      <Navbar />
+      <Bio />
       {renderTimeline()}
       {/* <Projects></Projects> */}
       {/* <Contact></Contact> */}
       {/* <Footer></Footer> */}
     </div>
-  )
-}
-
+  );
+};
 
 // class App extends Component {
 //   render() {

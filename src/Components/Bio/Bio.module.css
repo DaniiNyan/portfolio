@@ -1,5 +1,5 @@
 .Bio {
-    width: 100%;
+    padding: 30px 50px;
     height: 400px;
     display: flex;
     background-position: center; 
@@ -7,7 +7,7 @@
 }
 
 .minhaFoto {
-    max-width:100%;
+    width: 30%;
 }
 
 .Bio > p {
@@ -16,6 +16,11 @@
     
 }
 
-.centralizaImagem {
-    top: 12%;
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container  > p {
+    width: 60%;
 }

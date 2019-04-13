@@ -1,0 +1,13 @@
+
+@media only screen and (min-width: 1170px) {
+    .vertical-timeline.vertical-timeline--two-columns {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  
+    .vertical-timeline--two-columns .vertical-timeline-element-content {
+      margin-left: 5%; 
+    }  
+  
+  }
+  
