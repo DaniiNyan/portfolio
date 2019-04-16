@@ -14,30 +14,23 @@ const timeline = props => {
   return (
     <VerticalTimeline className={TimelineStyle.verticalTimeline}>
       <VerticalTimelineElement
-        className="vertical-timeline-element--work"
+        className="vertical-timeline-element"
         date={ano}
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={icon}
       >
         <h3 className="vertical-timeline-element-title">{titulo}</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+        <h4 className="vertical-timeline-element-subtitle">Subtitulo</h4>
         <p>{texto}</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        style={{ marginLeft: '5%'}}
-        className="vertical-timeline-element--work"
-        date="2010 - 2011"
+        className="vertical-timeline-element"
+        date={ano}
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={icon}
       >
-        <h3 className="vertical-timeline-element-title">Art Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          San Francisco, CA
-        </h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, SEO, Online
-          Marketing
-        </p>
+        <h3 className="vertical-timeline-element-title">{titulo}</h3>
+        <p>{texto}</p>
       </VerticalTimelineElement>
     </VerticalTimeline>
   );

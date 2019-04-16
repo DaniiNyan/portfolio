@@ -1,3 +1,11 @@
+.vertical-timeline--two-columns 
+.vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) 
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  left: auto;
+  right: 57%;
+  text-align: left;
+}
+
 
 @media only screen and (min-width: 1170px) {
     .vertical-timeline.vertical-timeline--two-columns {
