@@ -2,7 +2,6 @@ import React from 'react';
 import BioStyle from './Bio.module.css';
 import foto from './foto.jpg';
 import Image from 'react-bootstrap/Image';
-import Col from 'react-bootstrap/Col';
 
 const bio = props => {
 

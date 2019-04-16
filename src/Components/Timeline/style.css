@@ -1,11 +1,10 @@
-.vertical-timeline--two-columns 
-.vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) 
-.vertical-timeline-element-content .vertical-timeline-element-date {
-  left: auto;
-  right: 57%;
-  text-align: left;
+.vertical-timeline-element-content {
+  width: 45% !important;
 }
 
+.timeline-container {
+  padding: 0px 0px;
+}
 
 @media only screen and (min-width: 1170px) {
     .vertical-timeline.vertical-timeline--two-columns {
@@ -13,9 +12,7 @@
       margin-bottom: 0px;
     }
   
-    .vertical-timeline--two-columns .vertical-timeline-element-content {
-      margin-left: 5%; 
-    }  
+}
   
-  }
-  
+
+   

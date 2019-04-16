@@ -5,34 +5,38 @@ import {
   VerticalTimelineElement
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import './style.css';
+import "./style.css";
 
 const timeline = props => {
-  const { ano, icon, titulo, texto } = props;
+  const { eventos } = props;
 
-  console.log(props)
+  console.log(props);
   return (
-    <VerticalTimeline className={TimelineStyle.verticalTimeline}>
-      <VerticalTimelineElement
-        className="vertical-timeline-element"
-        date={ano}
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={icon}
-      >
-        <h3 className="vertical-timeline-element-title">{titulo}</h3>
-        <h4 className="vertical-timeline-element-subtitle">Subtitulo</h4>
-        <p>{texto}</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element"
-        date={ano}
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={icon}
-      >
-        <h3 className="vertical-timeline-element-title">{titulo}</h3>
-        <p>{texto}</p>
-      </VerticalTimelineElement>
-    </VerticalTimeline>
+    <div className="geral">
+      <div className="timeline-container">
+        <VerticalTimeline>
+          {eventos.map(({ id, ano, icon, titulo, texto }) => {
+            return (
+              <VerticalTimelineElement
+                className="vertical-timeline-element"
+                date={ano}
+                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                icon={icon}
+                key={id}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  {titulo}
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  Subtitulo
+                </h4>
+                <p>{texto}</p>
+              </VerticalTimelineElement>
+            );
+          })}
+        </VerticalTimeline>
+      </div>
+    </div>
   );
 };
 
