@@ -6,7 +6,6 @@ import Bio from "./Components/Bio/Bio";
 import Timeline from "./Components/Timeline/Timeline";
 import WorkIcon from "@material-ui/icons/Work";
 import Projects from "./Components/Projects/Projects";
-import ModalContact from "./Components/ModalContact/ModalContact";
 // import Footer from "./Components/Footer/Footer";
 //import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
