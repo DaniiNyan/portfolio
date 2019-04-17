@@ -1,10 +1,10 @@
-import React from 'react';
-import Carousel from 'nuka-carousel';
+import React from "react";
+import Carousel from "nuka-carousel";
 import slide from "./slide.png";
 
 const projects = props => {
-  
-    return (
+  return (
+    <div> 
       <Carousel>
         <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide1" />
         <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide2" />
@@ -13,7 +13,8 @@ const projects = props => {
         <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide5" />
         <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide6" />
       </Carousel>
-    );
-}
+    </div>
+  );
+};
 
 export default projects;

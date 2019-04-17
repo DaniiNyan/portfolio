@@ -1,22 +1,7 @@
-
-  * { box-sizing: border-box }
-
-/* .centralizaTexto {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+* {
+  box-sizing: border-box;
+}
 
 .geral {
   background-color: #ccc;
 }
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

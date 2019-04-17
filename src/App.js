@@ -6,10 +6,11 @@ import Bio from "./Components/Bio/Bio";
 import Timeline from "./Components/Timeline/Timeline";
 import WorkIcon from "@material-ui/icons/Work";
 import Projects from "./Components/Projects/Projects";
-// import Contact from "./Components/Contact/Contact";
+import ModalContact from "./Components/ModalContact/ModalContact";
 // import Footer from "./Components/Footer/Footer";
 //import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
+import Button from "react-bootstrap/Button";
 
 
 const app = () => {
@@ -21,14 +22,25 @@ const app = () => {
     ]
   });
 
+  const [modalState, setModalState] = useState ({
+    modalShow: false
+  });
+
+  const handlerModal = () => {
+    setModalState({
+      ...modalState,
+      modalShow: !modalState.modalShow
+    })
+  }
+
   return (
     <div>
       <Header />
       <Navbar />
       <Bio />
+            
       <Timeline eventos={eventoState.eventos} />
       <Projects></Projects>
-      {/* <Contact></Contact> */}
       {/* <Footer></Footer> */}
     </div>
   );
