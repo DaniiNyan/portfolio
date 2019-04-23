@@ -6,10 +6,11 @@ import Bio from "./Components/Bio/Bio";
 import Timeline from "./Components/Timeline/Timeline";
 import WorkIcon from "@material-ui/icons/Work";
 import Projects from "./Components/Projects/Projects";
-// import Footer from "./Components/Footer/Footer";
-//import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import Footer from "./Components/Footer/Footer";
 import "./App.css";
-import Button from "react-bootstrap/Button";
+
+
+
 
 
 const app = () => {
@@ -40,7 +41,7 @@ const app = () => {
             
       <Timeline eventos={eventoState.eventos} />
       <Projects></Projects>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 };

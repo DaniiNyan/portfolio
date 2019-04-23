@@ -2,3 +2,11 @@
     display: flex;
     justify-content: center;
   } */
+
+  .formulario > input {
+    margin-bottom: 20px;
+  }
+
+  .formulario > label {
+    font-weight: bold;
+  }
