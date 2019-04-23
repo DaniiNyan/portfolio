@@ -8,9 +8,9 @@ import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 const footer = props => {
     const [redesState, setRedesState] = useState({
         redes: [
-        { icon: faGithub, url: "https://github.com/DaniiNyan" },
-        { icon: faLinkedinIn, url: "https://github.com/DaniiNyan" },
-        { icon: faFacebookF, url: "https://github.com/DaniiNyan" }
+        { id: 1, icon: faGithub, url: "https://github.com/DaniiNyan" },
+        { id: 2, icon: faLinkedinIn, url: "https://github.com/DaniiNyan" },
+        { id: 3, icon: faFacebookF, url: "https://github.com/DaniiNyan" }
       ]
     });
 
@@ -18,7 +18,7 @@ const footer = props => {
   const renderRedes = () => (
       <div>
         {redesState.redes.map(redeSocial => (
-            <a href={redeSocial.url} className={FooterStyle.icone}>
+            <a href={redeSocial.url} className={FooterStyle.icone} key={redeSocial.id}>
               <FontAwesomeIcon icon={redeSocial.icon} size="2x" color="white" />
             </a>
           )

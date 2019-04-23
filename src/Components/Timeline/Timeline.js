@@ -16,13 +16,13 @@ const timeline = props => {
     <div className="geral">
       <div className="timeline-container">
         <VerticalTimeline>
-          {eventos.map(({ id, ano, icon, titulo, texto }) => {
+          {eventos.map(({ id, ano, icone, titulo, texto, cor }) => {
             return (
               <VerticalTimelineElement
                 className="vertical-timeline-element"
                 date={ano}
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-                icon={icon}
+                iconStyle={cor}
+                icon={icone}
                 key={id}
               >
                 <h3 className="vertical-timeline-element-title">
