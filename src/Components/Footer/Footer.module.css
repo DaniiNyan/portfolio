@@ -2,10 +2,16 @@
     background-color: #ccc;
     height: 120px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .listaIcones {
-    
+    width: 50%;
+    display: flex;
+    justify-content: space-around;    
+}
+
+.icone {
+    padding: 10px;
 }
