@@ -20,7 +20,7 @@ const bio = props => {
   };
 
   return (
-    <div className={BioStyle.Bio}>
+    <div id="bio" className={BioStyle.Bio}>
       <h1>Biografia</h1>
       <div className={BioStyle.container}>
         <p>
