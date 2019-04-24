@@ -5,7 +5,7 @@ import Image from "react-bootstrap/Image";
 
 import ModalContact from "./ModalContact/ModalContact";
 import Button from "react-bootstrap/Button";
-import ModalStyle from "./ModalContact/ModalContact.module.css"
+import ModalStyle from "./ModalContact/ModalContact.module.css";
 
 const bio = props => {
   const [modalState, setModalState] = useState({
@@ -20,7 +20,7 @@ const bio = props => {
   };
 
   return (
-    <div className={[BioStyle.Bio, "centralizaTexto"].join(" ")}>
+    <div className={BioStyle.Bio}>
       <h1>Biografia</h1>
       <div className={BioStyle.container}>
         <p>
@@ -33,19 +33,18 @@ const bio = props => {
           orci at fermentum. Sed pulvinar nulla ornare posuere pulvinar.
           Maecenas luctus est ac lacinia dapibus.
         </p>
-        <div className={BioStyle.centralizaImagem}>
-          <Image
-            src={foto}
-            alt="Foto"
-            className={BioStyle.minhaFoto}
-            roundedCircle
-          />
-        </div>
-        <ModalContact show={modalState.modalShow} onHide={handlerModal} />
-        <Button onClick={handlerModal} className={ModalStyle.botaoContato}>
-          Contato
-        </Button>
+        <Image
+          src={foto}
+          alt="Foto"
+          className={BioStyle.minhaFoto}
+          roundedCircle
+        />
+        
       </div>
+      <ModalContact show={modalState.modalShow} onHide={handlerModal} />
+      <Button onClick={handlerModal} className={ModalStyle.botaoContato}>
+        Contato
+      </Button>
     </div>
   );
 };
