@@ -4,7 +4,7 @@ import slide from "./slide.png";
 
 const projects = props => {
   return (
-    <div> 
+    <div id="projects"> 
       <Carousel>
         <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide1" />
         <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide2" />

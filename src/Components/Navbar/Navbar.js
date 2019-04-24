@@ -7,23 +7,24 @@ const navbar = props => {
   const [menuState, setMenuState] = useState({
     menus: [
       { id: 1, nome: "BIOGRAFIA", anchor: "#bio" },
-      { id: 1, nome: "BIOGRAFIA", anchor: "#bio" }
+      { id: 2, nome: "TIMELINE", anchor: "#timeline" },
+      { id: 3, nome: "PROJECTS", anchor: "#projects" }
     ]
   });
 
-  const renderMenu = () => menuState.menus.map(menu => (
+  const renderMenu = () =>
+    menuState.menus.map(menu => (
+      <Nav.Item>
         <Nav.Link>
-            <AnchorLink href={menu.anchor}>{menu.nome}</AnchorLink>
+          <AnchorLink href={menu.anchor}>{menu.nome}</AnchorLink>
         </Nav.Link>
-      )
-    )
+      </Nav.Item>
+    ));
 
   return (
     <div className={NavbarStyle.navbar}>
       <Nav className="justify-content-center" activeKey="/home">
-        <Nav.Item>
-          {renderMenu()}
-        </Nav.Item>
+        {renderMenu()}
       </Nav>
     </div>
   );
