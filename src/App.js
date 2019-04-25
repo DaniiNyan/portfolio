@@ -60,13 +60,8 @@ const app = () => {
       <Header />
       <Navbar />
       <Bio />
-      <div>
-        <Timeline eventos={eventoState.eventos} />
-      </div>
-
-      <div id="projects">
-        <Projects />
-      </div>
+      <Timeline eventos={eventoState.eventos} />
+      <Projects />
       <Footer />
     </div>
   );

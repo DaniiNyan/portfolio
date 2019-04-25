@@ -13,7 +13,7 @@ const timeline = props => {
 
   console.log(props);
   return (
-    <div className="geral" id="timeline">
+    <div className={TimelineStyle.Timeline} id="timeline">
       <div className="timeline-container">
         <VerticalTimeline>
           {eventos.map(({ id, ano, icone, titulo, texto, cor }) => {

@@ -14,7 +14,7 @@ const navbar = props => {
 
   const renderMenu = () =>
     menuState.menus.map(menu => (
-      <Nav.Item>
+      <Nav.Item key={menu.id}>
         
           <AnchorLink href={menu.anchor}>{menu.nome}</AnchorLink>
         
