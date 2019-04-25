@@ -42,7 +42,7 @@ const bio = props => {
         
       </div>
       <ModalContact show={modalState.modalShow} onHide={handlerModal} />
-      <Button onClick={handlerModal} className={ModalStyle.botaoContato}>
+      <Button onClick={handlerModal} bsPrefix={BioStyle.btnPink}>
         Contato
       </Button>
     </div>

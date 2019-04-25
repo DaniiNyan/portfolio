@@ -15,9 +15,9 @@ const navbar = props => {
   const renderMenu = () =>
     menuState.menus.map(menu => (
       <Nav.Item>
-        <Nav.Link>
+        
           <AnchorLink href={menu.anchor}>{menu.nome}</AnchorLink>
-        </Nav.Link>
+        
       </Nav.Item>
     ));
 

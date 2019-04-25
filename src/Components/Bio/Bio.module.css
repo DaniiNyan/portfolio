@@ -27,3 +27,16 @@
 .container  > p {
     width: 60%;
 }
+
+.Bio > h1 {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f18ddb;
+    text-shadow: #d072bc 1px 3px 20px;
+}
+
+.btnPink {
+    color: black;
+    background-color: white;
+    border-color: #d072bc;
+}
