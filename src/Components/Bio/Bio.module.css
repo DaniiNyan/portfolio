@@ -10,6 +10,7 @@
 .minhaFoto {
     height: 175px;
     margin-left: 30px;
+    box-shadow: 0 0px 50px 0 rgba(232, 155, 227, 0.25), 0 0px 51px 0 rgba(255, 4, 236, 0.17);
 }
 
 .Bio > p {
@@ -36,7 +37,10 @@
 }
 
 .btnPink {
-    color: black;
-    background-color: white;
-    border-color: #d072bc;
+    color: white;
+    background-color: #f18ddb;
+    border-radius: 21px;
+    border: 1px solid #f18ddb;
+    padding: 8px 12px;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.09), 0 9px 14px 0 rgba(0, 0, 0, 0.17);
 }

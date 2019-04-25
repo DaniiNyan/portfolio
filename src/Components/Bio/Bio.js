@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BioStyle from "./Bio.module.css";
 import foto from "./foto.jpg";
+import fotoDani from "./fotoDani.jpg";
 import Image from "react-bootstrap/Image";
 
 import ModalContact from "./ModalContact/ModalContact";
@@ -34,7 +35,7 @@ const bio = props => {
           Maecenas luctus est ac lacinia dapibus.
         </p>
         <Image
-          src={foto}
+          src={fotoDani}
           alt="Foto"
           className={BioStyle.minhaFoto}
           roundedCircle

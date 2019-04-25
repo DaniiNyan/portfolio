@@ -1,12 +1,15 @@
-/* .botaoContato {
-    display: flex;
-    justify-content: center;
-  } */
+.botaoContato {
+  color: white;
+  background-color: #f18ddb;
+  border-radius: 21px;
+  border: 1px solid #f18ddb;
+  padding: 8px 12px;
+}
 
-  .formulario > input {
-    margin-bottom: 20px;
-  }
+.formulario > input {
+  margin-bottom: 20px;
+}
 
-  .formulario > label {
-    font-weight: bold;
-  }
+.formulario > label {
+  font-weight: bold;
+}

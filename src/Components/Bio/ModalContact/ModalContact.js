@@ -19,11 +19,11 @@ const modalContact = props => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className={ModalStyle.formulario}>
-          <p>
+          {/* <p>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
             ac consectetur ac, vestibulum at eros.
-          </p>
+          </p> */}
           <Form.Label>Nome</Form.Label>
           <Form.Control type="text" placeholder="Nome" />
           <Form.Label>Email</Form.Label>
@@ -34,7 +34,7 @@ const modalContact = props => {
 
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
+          <Button onClick={props.onHide} bsPrefix={ModalStyle.botaoContato}>Close</Button>
         </Modal.Footer>
       </Modal>
     </div>
