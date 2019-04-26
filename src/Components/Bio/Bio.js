@@ -19,17 +19,14 @@ const bio = props => {
 
   return (
     <div id="bio" className={BioStyle.Bio}>
-      <h1>Biografia</h1>
       <div className={BioStyle.container}>
         <p>
           Sou estudante do Técnico de Informática da FUNDATEC e participante 
-          da Aceleradora Ágil, programa da Thought Works em parceria com o Centro
-          de Inovação da PUCRS.
-        </p>
-        <p>
-          Aspiro ser uma desenvolvedora completa, que possui conhecimento sobre
-          todas as <i>stacks</i> necessárias para a construção de uma aplicação. 
-          Porém, atualmente, meu coração pertence ao Java.
+          da 15ª edição da Aceleradora Ágil, programa da Thought Works em parceria com o Centro
+          de Inovação da PUCRS. Desejo ser uma desenvolvedora completa, que possui conhecimento sobre
+          todas as <i>stacks</i> necessárias para a construção de uma aplicação.
+          <br/>
+          <span className={BioStyle.escondeTexto}>Atualmente, meu coração pertence ao Java.</span>
         </p>
 
         <Image

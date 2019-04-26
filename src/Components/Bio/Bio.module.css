@@ -1,10 +1,9 @@
 .Bio {
-  padding: 30px 50px;
-  height: 400px;
+  height: 370px;
   display: flex;
-  background-position: center;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .minhaFoto {
@@ -17,6 +16,16 @@
 .Bio > p {
   margin: 7% 10%;
   width: 50%;
+}
+
+.escondeTexto {
+  color: white;
+  padding: 10px 150px;
+  transition: 0.5s;
+}
+
+.escondeTexto:hover {
+  color: rgba(222, 163, 222, 0.98);
 }
 
 .container {
@@ -47,6 +56,6 @@
 }
 
 .btnPink:hover {
-    color: #f18ddb;
-    background-color: #f7dcf5;
+  color: #f18ddb;
+  background-color: #f7dcf5;
 }

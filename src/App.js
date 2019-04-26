@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-//importar componentes aqui:
 import Header from "./Components/Header/Header";
 import Navbar from "./Components/Navbar/Navbar";
 import Bio from "./Components/Bio/Bio";
 import Timeline from "./Components/Timeline/Timeline";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-
 import Projects from "./Components/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
 import "./App.css";
@@ -20,27 +17,36 @@ const app = () => {
       {
         id: 1,
         icone: <LocationCityIcon />,
-        ano: "2010 - 2011",
-        titulo: "Teste1",
-        texto: "Lorem ipsum1",
-        cor: { background: "rgb(249, 149, 219)", color: "#fff" }
+        ano: "2020 — Futuro",
+        titulo: "Metas",
+        texto: "Morar sozinha, arrumar um emprego fixo",
+        cor: { background: "#fff", color: "#000" }
       },
       {
         id: 2,
         icone: <WorkIcon />,
-        ano: "2011 - 2013",
-        titulo: "Teste2",
-        texto: "Lorem ipsum2",
-        cor: { background: "rgb(33, 150, 243)", color: "#fff" }
+        ano: "2019 — Presente",
+        titulo: "Aceleradora Ágil",
+        texto: "Estágio de desenvolvimento com a Thought Works e o Centro de Inovação da PUCRS",
+        cor: { background: "#fff", color: "#000" }
       },
       {
         id: 3,
         icone: <SchoolIcon />,
-        ano: "2013 - Present",
-        titulo: "Teste3",
-        texto: "Lorem ipsum3",
-        cor: { background: "rgb(33, 150, 243)", color: "#fff" }
+        ano: "2018",
+        titulo: "Fundatec",
+        texto: "Ingresso no curso Técnico em Informática",
+        cor: { background: "#fff", color: "#000" }
+      },
+      {
+        id: 4,
+        icone: <LocationCityIcon/>,
+        ano: "2017",
+        titulo: "Mudança",
+        texto: "De São Paulo para Porto Alegre",
+        cor: { background: "#fff" , color: "#000"}
       }
+
     ]
   });
 

@@ -31,7 +31,7 @@ const modalContact = props => {
         <Modal.Footer>
           <Button onClick={props.onHide}
           type="submit" 
-          bsPrefix={ModalStyle.botaoContato}>Close</Button>
+          bsPrefix={ModalStyle.botaoContato}>Enviar</Button>
         </Modal.Footer>
       </Modal>
     </div>

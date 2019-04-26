@@ -28,9 +28,7 @@ const timeline = props => {
                 <h3 className="vertical-timeline-element-title">
                   {titulo}
                 </h3>
-                <h4 className="vertical-timeline-element-subtitle">
-                  Subtitulo
-                </h4>
+                
                 <p>{texto}</p>
               </VerticalTimelineElement>
             );

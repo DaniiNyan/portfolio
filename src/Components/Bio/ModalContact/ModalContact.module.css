@@ -6,6 +6,11 @@
   padding: 8px 12px;
 }
 
+.botaoContato:hover {
+  color: #f18ddb;
+  background-color: #f7dcf5;
+}
+
 .formulario > input {
   margin-bottom: 20px;
 }
