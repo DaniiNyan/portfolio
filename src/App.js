@@ -27,7 +27,8 @@ const app = () => {
         icone: <WorkIcon />,
         ano: "2019 — Presente",
         titulo: "Aceleradora Ágil",
-        texto: "Estágio de desenvolvimento com a Thought Works e o Centro de Inovação da PUCRS",
+        texto:
+          "Estágio de desenvolvimento com a Thought Works e o Centro de Inovação da PUCRS",
         cor: { background: "#fff", color: "#000" }
       },
       {
@@ -40,13 +41,12 @@ const app = () => {
       },
       {
         id: 4,
-        icone: <LocationCityIcon/>,
+        icone: <LocationCityIcon />,
         ano: "2017",
         titulo: "Mudança",
         texto: "De São Paulo para Porto Alegre",
-        cor: { background: "#fff" , color: "#000"}
+        cor: { background: "#fff", color: "#000" }
       }
-
     ]
   });
 
