@@ -19,22 +19,19 @@ const modalContact = props => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className={ModalStyle.formulario}>
-          {/* <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
-          </p> */}
           <Form.Label>Nome</Form.Label>
-          <Form.Control type="text" placeholder="Nome" />
+          <Form.Control type="text" placeholder="Nome" required/>
           <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Email" />
+          <Form.Control type="email" placeholder="Email" required/>
           <Form.Label>Mensagem</Form.Label>
-          <Form.Control as="textarea" rows="3" placeholder="Mensagem" />
+          <Form.Control as="textarea" rows="3" placeholder="Mensagem" required/>
           <Form.Text className="text-muted">Obs.: Todos os campos são obrigatórios.</Form.Text>
 
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide} bsPrefix={ModalStyle.botaoContato}>Close</Button>
+          <Button onClick={props.onHide}
+          type="submit" 
+          bsPrefix={ModalStyle.botaoContato}>Close</Button>
         </Modal.Footer>
       </Modal>
     </div>

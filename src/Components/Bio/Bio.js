@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import BioStyle from "./Bio.module.css";
-import foto from "./foto.jpg";
 import fotoDani from "./fotoDani.jpg";
 import Image from "react-bootstrap/Image";
-
 import ModalContact from "./ModalContact/ModalContact";
 import Button from "react-bootstrap/Button";
-import ModalStyle from "./ModalContact/ModalContact.module.css";
 
 const bio = props => {
   const [modalState, setModalState] = useState({
@@ -25,15 +22,16 @@ const bio = props => {
       <h1>Biografia</h1>
       <div className={BioStyle.container}>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          placerat, velit in suscipit accumsan, orci ante molestie arcu, a
-          vehicula diam nisi sed magna. Nulla ac augue turpis. Phasellus rutrum,
-          libero a rhoncus dignissim, enim odio suscipit ex, sed hendrerit nulla
-          diam sed ex. Mauris sed maximus quam. Vestibulum congue lacus ac erat
-          egestas, quis consectetur nisi tincidunt. Vestibulum volutpat faucibus
-          orci at fermentum. Sed pulvinar nulla ornare posuere pulvinar.
-          Maecenas luctus est ac lacinia dapibus.
+          Sou estudante do Técnico de Informática da FUNDATEC e participante 
+          da Aceleradora Ágil, programa da Thought Works em parceria com o Centro
+          de Inovação da PUCRS.
         </p>
+        <p>
+          Aspiro ser uma desenvolvedora completa, que possui conhecimento sobre
+          todas as <i>stacks</i> necessárias para a construção de uma aplicação. 
+          Porém, atualmente, meu coração pertence ao Java.
+        </p>
+
         <Image
           src={fotoDani}
           alt="Foto"
